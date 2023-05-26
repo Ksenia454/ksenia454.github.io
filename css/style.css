@@ -374,8 +374,7 @@ h3{
     
   }
 
-  
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
     .header {
       flex-direction: column;
     }
@@ -385,7 +384,9 @@ h3{
     }
     .header .menu ul li {
       margin: 5px;
+      justify-content: flex-start;
     }
+
     article
     {
       margin-top: 150px;
