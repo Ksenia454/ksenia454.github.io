@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/style.css'>
+    <title>Digital Design</title>
+</head>
+
+<body class="light-mode">
+    <!-- Навигационное меню -->
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="#phones">Смартфоны</a></li>
+                <li> <a href="#tablets">Планшеты</a></li>
+                <li> <a href="#laptops">Ноутбуки</a></li>
+                <li> <a href="#tv">Телевизоры</a></li>
+                <li>
+                    <div id="theme-mode" onclick="toggleTheme()"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <!-- Форма заказа -->
+        <form id="order-form">
+            <label for="quantity">Количество товара:</label>
+            <input type="number" id="quantity" min="1">
+
+            <label for="color">Выберите цвет:</label>
+            <input type="radio" name="color" value="Красный"> Красный<br>
+            <input type="radio" name="color" value="Синий"> Синий<br>
+            <input type="radio" name="color" value="Зеленый"> Зеленый<br>
+            <input type="radio" name="color" value="Желтый"> Желтый<br>
+            <br>
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" rows="5" maxlength="2000"></textarea>
+
+            <button type="submit" onclick="buy()">Купить</button>
+            <button type="exit">Закрыть</button>
+        </form>
+
+        <!-- Смартфоны -->
+        <!-- Название -->
+        <div class="category" id="phones">
+            <h1>Смартфоны</h1>
+        </div> <br>
+        <!-- Карточки -->
+
+
+        <div class="goods">
+            <div class="product">
+                <div class="product__top">
+
+                    <a href="#" class="product__image">
+                        <img src="./img/phones/phone1.JPG" alt="" />
+                    </a>
+                </div>
+
+                <div class="product__bottom">
+                    <a href="#" class="product__title">
+                        Xiaomi Redmi Note 11S
+                    </a>
+                    <h3></h3>
+                    <button class="btn-buy" onclick="showForm()">Купить</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone2.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            ITEL A48
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone3.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Samsung Galaxy S10
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone4.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            realme C30S
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone5.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            OPPO A57s
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone6.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Tecno POVA Neo
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone7.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Honor X7a
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone8.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Xiaomi Redmi Note 11S
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone9.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Poco M5
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone10.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            realme C55
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone11.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Xiaomi Redmi 12C
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone12.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Apple iPhone 8
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone13.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Xiaomi Redmi 9A
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/phones/phone14.JPG" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Infinix SMART 6 PLUS
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+        <!-- Планшеты -->
+        <!-- Название -->
+        <div class="category" id="tablets">
+            <h1>Планшеты</h1>
+        </div> <br>
+        <!-- Карточки -->
+
+
+        <div class="goods">
+            <div class="product">
+                <div class="product__top">
+
+                    <a href="#" class="product__image">
+                        <img src="./img/tablets/tablets1.webp" alt="" />
+                    </a>
+                </div>
+
+                <div class="product__bottom">
+                    <a href="#" class="product__title">
+                        MAIMEITE XT5-S42
+                    </a>
+                    <h3></h3>
+                    <button class="btn-buy" onclick="showForm()">Купить</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets2.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Honor Pad X8
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets3.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Teclast P40HD
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets4.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Samsung Galaxy Tab A7 Lite
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets5.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            VANWIN
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets6.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Digma Pro
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets7.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Xiaomi Redmi Pad
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets8.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Teclast T50
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets9.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Samsung Galaxy Tab A7
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets10.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Xiaomi Redmi Pad
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tablets/tablets11.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Apple iPad 9th
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+          <!-- Ноутбуки -->
+        <!-- Название -->
+        <div class="category" id="laptops">
+            <h1>Ноутбуки</h1>
+        </div> <br>
+        <!-- Карточки -->
+
+        <div class="goods">
+            <div class="product">
+                <div class="product__top">
+
+                    <a href="#" class="product__image">
+                        <img src="./img/laptops/laptops1.webp" alt="" />
+                    </a>
+                </div>
+
+                <div class="product__bottom">
+                    <a href="#" class="product__title">
+                        F+ FLAPTOP I-series
+                    </a>
+                    <h3></h3>
+                    <button class="btn-buy" onclick="showForm()">Купить</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops2.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Echips Envy 15.6"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops3.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Haier A1420EM
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops4.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Digma EVE 14 C414
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops5.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Digma Pro
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops6.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            F+ I FLTP 5i3
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops7.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            F+ FLAPTOP I-series
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops8.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            ASUS Expertbook B2
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops9.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            maibenben M543
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops10.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Acer Aspire 7 A715
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops11.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Lenovo Legion 5
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/laptops/laptops12.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Digma EVE 15 P417
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+
+         <!-- Телевизоры -->
+        <!-- Название -->
+        <div class="category" id="tv">
+            <h1>Телевизоры</h1>
+        </div> <br>
+        <!-- Карточки -->
+
+
+        <div class="goods">
+            <div class="product">
+                <div class="product__top">
+
+                    <a href="#" class="product__image">
+                        <img src="./img/tv/tv1.webp" alt="" />
+                    </a>
+                </div>
+
+                <div class="product__bottom">
+                    <a href="#" class="product__title">
+                        AccesStyle 43" 4K UHD
+                    </a>
+                    <h3></h3>
+                    <button class="btn-buy" onclick="showForm()">Купить</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv2.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            V-HOME 32LH1210 32"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv3.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Doffler 24"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv4.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            KIVI 43U750NB 43" 4K UHD
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv5.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Hartens HT-32H06B-VZ 32"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv6.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            KIVI 43U740NB 43" 4K
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv7.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            V-HOME 24LH0211 24" 
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv8.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            V-HOME 32LH0214 32"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv9.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            AccesStyle 32" Full HD
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv10.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Hartens HTY-50UHD05B-S2 50"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv11.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Hartens HTV-32HDR06B-S2 32"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv12.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            KIVI 50U740LB 50"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv13.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Hartens HTY-32HDRO6B-HC22 32"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv14.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            Hartens HTY-43FHDO6G-HC22 43"
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product">
+                    <div class="product__top">
+
+                        <a href="#" class="product__image">
+                            <img src="./img/tv/tv15.webp" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="product__bottom">
+                        <a href="#" class="product__title">
+                            KIVI 50U750NB 50" 4K 
+                        </a>
+                        <h3></h3>
+                        <button class="btn-buy" onclick="showForm()">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </article>
+<!-- Подвал -->
+    <footer>
+        <ul class="category-list">
+            <li><a href="#phones">Смартфоны</a></li>
+            <li> <a href="#tablets">Планшеты</a></li>
+            <li> <a href="#laptops">Ноутбуки</a></li>
+            <li> <a href="#tv">Телевизоры</a></li>
+        </ul>
+    </footer>
+
+<!-- Кнопка "Наверх" -->
+    <div class="back-to-top" onclick="scrollToTop()">
+        &#8593;
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/script_date.js"></script>
+</body>
+
+</html>
